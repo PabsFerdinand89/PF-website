@@ -3,8 +3,8 @@ showSlides();
 
 function showSlides() {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let slides = $(".mySlides");
+  let dots = $(".dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -16,4 +16,13 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 7000);
+}
+
+const dropDownBtn = $("btn");
+const dropDownMenu = $("#dropdownBtns");
+const toggleList = $("#ourCoreBeliefs");
+
+const toggleDropDown = function () {
+  dropDownMenu.classList.toggle("show");
+  toggleList.classList.toggle("#ourCoreBeliefs");
 }

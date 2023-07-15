@@ -3,14 +3,13 @@ html {
   width: 100%;
 }
   
-button, input {
+.btn, input {
   border-radius: 25px;
   border-style: solid groove;
+  justify-content: space-between;
+  margin: 7px;
 }
 
-button, .col-sm-2-text-wrap {
-  text-decoration: solid;
-}
 
 
 * {box-sizing: border-box;}
@@ -67,7 +66,7 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .5} 
+  from {opacity: .6} 
   to {opacity: 1}
 }
 
