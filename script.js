@@ -1,3 +1,4 @@
+//slideshow
 let slideIndex = 0;
 showSlides();
 
@@ -18,11 +19,18 @@ function showSlides() {
   setTimeout(showSlides, 7000);
 }
 
-const dropDownBtn = $("btn");
-const dropDownMenu = $("#dropdownBtns");
-const toggleList = $("#ourCoreBeliefs");
+//dropdown button//
+function dropDownMenuBtn {
+  $('#aboutUsDropBtn').classList.toggle('show');
+}
 
-const toggleDropDown = function () {
-  dropDownMenu.classList.toggle("show");
-  toggleList.classList.toggle("#ourCoreBeliefs");
+window.onclick = function(event) {
+  var dropdowns = $('.dropdown-content');
+  var i; 
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropMenu = dropdowns[i];
+    if (openDropMenu.classList.contains('show')) {
+      openDropMenu.classlist.remove('show');
+    }
+  }
 }

@@ -48,14 +48,14 @@
     <div class="row">
       <div class="col-md-1"></div>
       <button class="col-md-2 btn glyphicon glyphicon-home" id="Home"><a href="home page.html"> Home</a></button>
-      <button class="col-md-2 btn glyphicon glyphicon-globe" id="aboutUs">  
-        <select>
-          <option>About Us</option>
-          <option><a href="#">Beliefs</a></option>
-          <option><a href="#">Missions</a></option>
-          <option><a href="#">Ministries</a></option>
-        </select>
-      </button>
+      <div class="col-md-2 btn glyphicon glyphicon-globe dropdown" id="aboutUs">
+        <button onclick="dropDownMenuBtn()" class="dropbtn">About Us</button>
+      </div>
+      <div id="aboutUsDropBtn" class="dropdown-content">
+        <a href="#">Beliefs</a>
+        <a href="#">Missions</a>
+        <a href="#">Ministries</a>
+      </div>
       <button class="col-md-2 btn glyphicon glyphicon-credit-card" id="Giving"> Giving</button>
       <button class="col-md-2 btn glyphicon glyphicon-facetime-video" id="media"> Media</button>
       <button class="col-md-2 btn glyphicon glyphicon-phone" id="contactUs"> Contact </button> 
