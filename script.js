@@ -20,7 +20,7 @@ function showSlides() {
 }
 
 //dropdown button//
-function dropDownMenuBtn {
+function dropDownMenuBtn () {
   $('#aboutUsDropBtn').classList.toggle('show');
 }
 
