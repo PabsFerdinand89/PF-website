@@ -20,15 +20,20 @@ function showSlides() {
 }
 
 //dropdown button//
-function dropDownMenuBtn () {
-  $('#aboutUsDropBtn').classList.toggle('show');
+function dropDownMenu() {
+  $("#myDropdown").classList.toggle("show");
 }
 
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    var dropdowns = $(".dropdown-content");
-   if (openDropMenu.classList.contains('show')) {
-      openDropMenu.classlist.remove('show');
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
     }
   }
 }
