@@ -24,12 +24,10 @@ function dropDownMenuBtn () {
   $('#aboutUsDropBtn').classList.toggle('show');
 }
 
-window.onclick = function(event) {
-  var dropdowns = $('.dropdown-content');
-  var i; 
-  for (i = 0; i < dropdowns.length; i++) {
-    var openDropMenu = dropdowns[i];
-    if (openDropMenu.classList.contains('show')) {
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var dropdowns = $(".dropdown-content");
+   if (openDropMenu.classList.contains('show')) {
       openDropMenu.classlist.remove('show');
     }
   }
