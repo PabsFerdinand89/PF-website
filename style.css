@@ -102,9 +102,9 @@ body {
 }
 
 .dropdown {
-  float: right;
+  float: left;
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
@@ -126,5 +126,9 @@ body {
 }
 
 .dropdown a:hover {background-color: #ddd;}
-
 .show {display: block;}
+
+h3 {
+  float: right;
+  display: block;
+}
