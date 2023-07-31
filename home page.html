@@ -43,18 +43,22 @@
   </div>
   
   
-  <!--menu/navigation bar -->
+  <!-- 
   
-  <nav class="container-fluid " id="navBar">
+  <nav class="container-fluid " >
     <div class="row">
       <div class="dropdown">
-        <button onclick="dropDownFunction()" id="dropbtn" class="glyphicon glyphicon-home"> Home</button>
-        <!-- turn dropdown menu into horizontal nav bar. Make content of navbar dropdown. -->
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-home dropbtn"> Home</button>
+        turn dropdown menu into horizontal nav bar. Make content of navbar dropdown. 
+        
         <div id="dropDownMenu" class="dropdown-content">
           <a href="#About" class="glyphicon glyphicon-menu-right"> About Us</a>
           <a href="#Core Beliefs" class="glyphicon glyphicon-list"> Beliefs</a>
+             AG 16 fundamentals
           <a href="#Ministries" class="glyphicon glyphicon-globe"> Ministries</a>
+             2-3 sentences about each ministry; statements from leaders 
           <a href="#Media" class="glyphicon glyphicon-camera"> Media</a>
+             videos; sermons & pictures
           <a href="#Giving" class="glyphicon glyphicon-credit-card"> Giving</a>
           <a href="#Calender" class=""> Calender</a>
           <a href="#contact" class="glyphicon glyphicon-phone"> Contact</a>
@@ -62,6 +66,58 @@
       </div>
     </div>
   </nav> 
+
+-->
+
+  <nav class="container-fluid" id="navBar">
+    <div class="row">
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-home dropbtn"> Home</button>
+      </div>
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-user dropbtn"> About Us</button>
+        <div id="dropDownMenu" class="dropdown-content">
+          <a href="#about"></a>
+        </div>
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-th-list dropbtn"> Beliefs</button>
+        <div id="dropDownMenu" class="dropdown-content">
+          <a href="#about"></a>
+        </div>
+      </div>
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-globe dropbtn"> Ministries</button>
+        <div id="dropDownMenu" class="dropdown-content">
+          <a href="#about"></a>
+        </div>
+      </div>
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-camera dropbtn"> Media</button>
+        <div id="dropDownMenu" class="dropdown-content">
+          <a href="#about"></a>
+        </div>
+      </div>
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-calendar dropbtn"> Calender</button>
+        <div id="dropDownMenu" class="dropdown-content">
+          <a href="#about"></a>
+        </div>
+      </div>
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon- dropbtn"> Calender</button>
+        <div id="dropDownMenu" class="dropdown-content">
+          <a href="#about"></a>
+        </div>
+      </div>
+      <div class="col-sm-2 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-phone dropbtn"> Contact Us</button>
+        <div id="dropDownMenu" class="dropdown-content">
+          <a href="#about"></a>
+        </div>
+      </div> 
+    </div>
+  </nav>
+
   <br>
 
   <body class="container-fluid">
@@ -72,10 +128,6 @@
       We offer a friendly, welcoming atmosphere from the moment you first walk in, up until you leave.
       We hope to see you in one of our gatherings soon. God bless you!
     </p>
-    
-    <span>Senior Pastor Rick and Vickie Smith</span>
-  
-    <img src="">
   </body>
   
 </html>

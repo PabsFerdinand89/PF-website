@@ -76,7 +76,7 @@ body {
 
 
 /*dropdown buttons*/
-#dropbtn {
+.dropbtn {
   background-color: #04AA6D;
   color: white;
   width: 100%;
@@ -91,8 +91,6 @@ body {
 }
 
 .dropdown {
-  float: none;
-  position: relative;
   display: inline-block;
 }
 
