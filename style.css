@@ -1,7 +1,7 @@
 html {
   height: 100%;
   width: 100%;
-  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /*slideshow */
@@ -75,52 +75,6 @@ body {
 }
 
 
-/*dropdown buttons*/
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
-.dropdown {
-  position: static;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  justify-content: center;
-  background-color: #f1f1f1;
-  width: 750%;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  right: 0;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-.contactInfo {
-  margin: 7px;
-  overflow:scroll;
-}
-
 /* Style tab links */
 .tablink {
   background-color: #555;
@@ -131,7 +85,7 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 25%;
+  /* width: 25%; */
 }
 
 .tablink:hover {
@@ -142,11 +96,20 @@ body {
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px 20px;
+  padding: 50px 20px;
   height: 100%;
+  width: 100%;
 }
 
 #Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#AboutUs {background-color: green;}
+#Ministries {background-color: blue;}
+#Media {background-color: orange;}
+#Beliefs {background-color: brown;}
+#Calendar {background-color: slategrey;}
+#Giving {background-color: black;}
+#Contact {background-color: maroon;}
+
+#mapLocation {
+  margin-bottom: 5%;
+}

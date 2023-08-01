@@ -54,17 +54,7 @@
         <div id="about" class="dropdown-content">
           <div class="container">
             <h4>Our Leaders</h4>
-            <p>
-              <span>Senior Pastor: Rick and Vickie Smith</span>
-              <br>
-              <span>Associate Pastor: Charles and Pamela Kruetzer</span>
-              <br>
-              <span>Youth Pastor: Chris & Kandice Seyffert</span>
-              <br>
-              <span>Children's Ministry Leader: Kacia Harmon</span>
-              <br>
-              <span>Music Ministry Leader: Charlotte Haliman</span>
-            </p>
+            
           </div>
         </div>
       </div>
@@ -97,11 +87,10 @@
         <div id="contactDropdown" class="container-fluid dropdown-content">
           <h4>How to Reach Us</h4>
           <br>
-          <span class="contactInfo">At our church location:<address> 10630 FM 740 Forney, TX 75126</address></span>
           <br>
           <span class="contactInfo">Our mailing address:<address> PO Box 913, Forney, TX  75126</address></span>
           <br>
-          <span class="contactInfo">Or follow us on<a href="www.facebook.com/peoplesfellowshipchurch"><img src="/FB logo" width="17" alt="Facebook Logo"> Facebook</a></span>
+          
         </div>
       </div>
       <div class="col-md-2"></div>
@@ -112,15 +101,20 @@
 
   <nav class="container-fluid">
     <div class="row">
-      <button class="col-sm-1 tablink glyphicon glyphicon-home" onclick="openPage('Home', this, 'red')"> Home</button>
-      <button class="tablink glyphicon glyphicon-user" onclick="openPage('News', this, 'green')" id="defaultOpen"> About Us</button>
-      <button class="tablink glyphicon glyphicon-globe" onclick="openPage('About', this, 'orange')"> Ministries</button>
-      <button class="tablink glyphicon glyphicon-calendar" onclick="openPage('Calender', this, 'black')"> Calendar</button>
-      <button class="tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this, 'blue')"> Contact</button>
+      <div class="col-md-2"></div>
+      <button class="col-md-1 tablink glyphicon glyphicon-home" onclick="openPage('Home', this, 'red')" id="defaultOpen"> Home</button>
+      <button class="col-md-1 tablink glyphicon glyphicon-user" onclick="openPage('AboutUs', this, 'green')" > About</button>
+      <button class="col-md-1 tablink glyphicon glyphicon-globe" onclick="openPage('Ministries', this, 'blue')"> Ministries</button>
+      <button class="col-md-1 tablink glyphicon glyphicon-camera" onclick="openPage('Media', this, 'orange')"> Media</button>
+      <button class="col-md-1 tablink glyphicon glyphicon-list" onclick="openPage('Beliefs', this, 'brown')"> Beliefs</button>
+      <button class="col-md-1 tablink glyphicon glyphicon-calendar" onclick="openPage('Calendar', this, 'slategray')"> Calendar</button>
+      <button class="col-md-1 tablink glyphicon glyphicon-credit-card" onclick="openPage('Giving', this, 'black')"> Giving</button>
+      <button class="col-md-1 tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this, 'maroon')"> Contact</button>
+      <div class="col-md-2"></div>
     </div>
-    
+
     <div id="Home" class="tabcontent">
-      <h3>Home</h3>
+      <h3>Welcome to People's Fellowship</h3>
       <p>Here at People's Fellowship, we love people - all people. 
         Our goal is to be hope for the hopeless, healing for the hurting, and salvation through Jesus Christ to those who are lost. 
         We offer Bible-based preaching and worship, and a time of prayer for people's needs during each service. 
@@ -130,25 +124,63 @@
       </p>
     </div>
 
-    <div id="News" class="tabcontent">
-      <h3>News</h3>
-      <p>Some news this fine day!</p> 
+    <div id="AboutUs" class="tabcontent">
+      <h3>Our Leadership</h3>
+      <p>
+        <span><img src="" width="7" alt=""/>Senior Pastor: Rick and Vickie Smith</span>
+        <br>
+        <span><img src="" width="7" alt=""/>Associate Pastor: Charles and Pamela Kruetzer</span>
+        <br>
+        <span><img src="" width="7" alt=""/>Youth Pastor: Chris & Kandice Seyffert</span>
+        <br>
+        <span><img src="" width="7" alt=""/>Children's Ministry Leader: Kacia Harmon</span>
+        <br>
+        <span><img src="" width="7" alt=""/>Music Ministry Leader: Charlotte Haliman</span>
+      </p> 
     </div>
 
-    <div id="Contact" class="tabcontent">
-      <h3>Contact</h3>
-      <p>Get in touch, or swing by for a cup of coffee.</p>
+    <div id="Ministries" class="tabcontent">
+      <h3>Ministries we offer</h3>
+      <p>
+        <span>Wednesday Night Bible Study</span>
+        <br>
+        <span>Youth Ministry</span>
+        <br>
+        <span>Overcomers</span>
+        <br>
+        
+      </p>
     </div>
 
-    <div id="About" class="tabcontent">
+    <div id="Media" class="tabcontent">
+      <h3>Service Livetreams</h3>
+      <h3>Photos</h3>
+      <video src=""></video>
+    </div>
+
+    <div id="Beliefs" class="tabcontent">
       <h3>About</h3>
       <p>Who we are and what we do.</p>
     </div>
+    
+    <div id="Calendar" class="tabcontent">
+      <h3>Our upcoming events. Put These dates on your calendar:</h3>
+    </div>
+
+    <div id="Giving" class="tabcontent">
+      <h3>There are Several Ways to Give</h3>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>How to Contact Us:</h3>
+      <span>You can visit us at <address> 10630 FM 740 Forney, TX 75126</address>
+      <img src="/Map location.JPG" width="500" id="mapLocation"/>
+      <br>
+      <span>Or follow us on <a href="www.facebook.com/peoplesfellowshipchurch"><img src="/FB logo" width="13" alt="Facebook Logo"> Facebook</a></span>
+    </div>
   </nav>
 
-  <body class="container-fluid">
-    
-  </body>
+  
 
   <footer>
     <!-- slideshow pic gallery-->

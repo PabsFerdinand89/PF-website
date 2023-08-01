@@ -19,23 +19,8 @@ function showSlides() {
   setTimeout(showSlides, 7000);
 }
 
-//dropdown button//
-function givingDropdown() {
-  document.getElementById("givingDropdown").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('#givingDropdown')) {
-    var dropdowns = document.getElementById('givingDropdown');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
+//full page tabs
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -49,6 +34,5 @@ function openPage(pageName,elmnt,color) {
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
 }
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
