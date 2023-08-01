@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
   </head>
 
@@ -41,94 +41,118 @@
     <span class="dot"></span> 
     <span class="dot"></span> 
   </div>
-  
-  
-  <!-- 
-  
-  <nav class="container-fluid " >
-    <div class="row">
-      <div class="dropdown">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-home dropbtn"> Home</button>
-        turn dropdown menu into horizontal nav bar. Make content of navbar dropdown. 
-        
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#About" class="glyphicon glyphicon-menu-right"> About Us</a>
-          <a href="#Core Beliefs" class="glyphicon glyphicon-list"> Beliefs</a>
-             AG 16 fundamentals
-          <a href="#Ministries" class="glyphicon glyphicon-globe"> Ministries</a>
-             2-3 sentences about each ministry; statements from leaders 
-          <a href="#Media" class="glyphicon glyphicon-camera"> Media</a>
-             videos; sermons & pictures
-          <a href="#Giving" class="glyphicon glyphicon-credit-card"> Giving</a>
-          <a href="#Calender" class=""> Calender</a>
-          <a href="#contact" class="glyphicon glyphicon-phone"> Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav> 
-
--->
-
+   
+  <!--
   <nav class="container-fluid" id="navBar">
     <div class="row">
-      <div class="col-sm-2 dropdown">
+      <div class="col-md-2"></div>
+      <div class="col-md-1">
         <button onclick="dropDownFunction()" class="glyphicon glyphicon-home dropbtn"> Home</button>
       </div>
-      <div class="col-sm-2 dropdown">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-user dropbtn"> About Us</button>
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#about"></a>
+      <div class="col-md-1 dropdown">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-user dropbtn"> About</button>
+        <div id="about" class="dropdown-content">
+          <div class="container">
+            <h4>Our Leaders</h4>
+            <p>
+              <span>Senior Pastor: Rick and Vickie Smith</span>
+              <br>
+              <span>Associate Pastor: Charles and Pamela Kruetzer</span>
+              <br>
+              <span>Youth Pastor: Chris & Kandice Seyffert</span>
+              <br>
+              <span>Children's Ministry Leader: Kacia Harmon</span>
+              <br>
+              <span>Music Ministry Leader: Charlotte Haliman</span>
+            </p>
+          </div>
         </div>
-      <div class="col-sm-2 dropdown">
+      </div>
+      <div class="col-md-1">
         <button onclick="dropDownFunction()" class="glyphicon glyphicon-th-list dropbtn"> Beliefs</button>
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#about"></a>
-        </div>
       </div>
-      <div class="col-sm-2 dropdown">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-globe dropbtn"> Ministries</button>
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#about"></a>
-        </div>
+      <div class="col-md-1">
+        <button onclick="dropDownFunction()" class="glyphicon glyphicon-globe dropbtn"> Ministries</button>  
       </div>
-      <div class="col-sm-2 dropdown">
+      <div class="col-md-1">
         <button onclick="dropDownFunction()" class="glyphicon glyphicon-camera dropbtn"> Media</button>
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#about"></a>
-        </div>
-      </div>
-      <div class="col-sm-2 dropdown">
+      </div>    
+      <div class="col-md-1">
         <button onclick="dropDownFunction()" class="glyphicon glyphicon-calendar dropbtn"> Calender</button>
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#about"></a>
+      </div>
+
+      <div class="col-md-1 dropdown">
+        <button onclick="givingDropdown()" class="glyphicon glyphicon-credit-card dropbtn"> Giving</button>
+        <div id="givingDropdown" class="container-fluid dropdown-content">
+          <p>You can contribute to the ministry either <a href="#">online</a>
+          or by texting a dollar amount to our text-to-give number <a>972</a>
+          </p>
+          <br>
+          <span>Online</span>
         </div>
       </div>
-      <div class="col-sm-2 dropdown">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-credit-card dropbtn"> Giving</button>
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#about"></a>
+
+      <div class="col-md-1 dropdown">
+        <button onclick="contactDropdown()" class="glyphicon glyphicon-phone dropbtn"> Contact</button>
+        <div id="contactDropdown" class="container-fluid dropdown-content">
+          <h4>How to Reach Us</h4>
+          <br>
+          <span class="contactInfo">At our church location:<address> 10630 FM 740 Forney, TX 75126</address></span>
+          <br>
+          <span class="contactInfo">Our mailing address:<address> PO Box 913, Forney, TX  75126</address></span>
+          <br>
+          <span class="contactInfo">Or follow us on<a href="www.facebook.com/peoplesfellowshipchurch"><img src="/FB logo" width="17" alt="Facebook Logo"> Facebook</a></span>
         </div>
       </div>
-      <div class="col-sm-2 dropdown">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-phone dropbtn"> Contact Us</button>
-        <div id="dropDownMenu" class="dropdown-content">
-          <a href="#about"></a>
-        </div>
-      </div> 
+      <div class="col-md-2"></div>
+    </div>  
+  </nav>
+  -->
+  <br>
+
+  <nav class="container-fluid">
+    <div class="row">
+      <button class="col-sm-1 tablink glyphicon glyphicon-home" onclick="openPage('Home', this, 'red')"> Home</button>
+      <button class="tablink glyphicon glyphicon-user" onclick="openPage('News', this, 'green')" id="defaultOpen"> About Us</button>
+      <button class="tablink glyphicon glyphicon-globe" onclick="openPage('About', this, 'orange')"> Ministries</button>
+      <button class="tablink glyphicon glyphicon-calendar" onclick="openPage('Calender', this, 'black')"> Calendar</button>
+      <button class="tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this, 'blue')"> Contact</button>
+    </div>
+    
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <p>Here at People's Fellowship, we love people - all people. 
+        Our goal is to be hope for the hopeless, healing for the hurting, and salvation through Jesus Christ to those who are lost. 
+        We offer Bible-based preaching and worship, and a time of prayer for people's needs during each service. 
+        Although we are an Assemblies of God church, our church family has a variety of backgrounds. 
+        We offer a friendly, welcoming atmosphere from the moment you first walk in, up until you leave.
+        We hope to see you in one of our gatherings soon. God bless you!
+      </p>
+    </div>
+
+    <div id="News" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p> 
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
     </div>
   </nav>
 
-  <br>
-
   <body class="container-fluid">
-    <p>Here at People's Fellowship, we love people - all people. 
-      Our goal is to be hope for the hopeless, healing for the hurting, and salvation through Jesus Christ to those who are lost. 
-      We offer Bible-based preaching and worship, and a time of prayer for people's needs during each service. 
-      Although we are an Assemblies of God church, our church family has a variety of backgrounds. 
-      We offer a friendly, welcoming atmosphere from the moment you first walk in, up until you leave.
-      We hope to see you in one of our gatherings soon. God bless you!
-    </p>
+    
   </body>
+
+  <footer>
+    <!-- slideshow pic gallery-->
+  </footer>
   
 </html>
 

@@ -20,14 +20,12 @@ function showSlides() {
 }
 
 //dropdown button//
-function dropDownFunction () {
-  document.getElementById("dropDownMenu").classList.toggle("show");
+function givingDropdown() {
+  document.getElementById("givingDropdown").classList.toggle("show");
 }
-
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = $(".dropdown-content");
+  if (!event.target.matches('#givingDropdown')) {
+    var dropdowns = document.getElementById('givingDropdown');
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -37,3 +35,20 @@ window.onclick = function(event) {
     }
   }
 }
+
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
