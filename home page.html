@@ -42,75 +42,18 @@
     <span class="dot"></span> 
   </div>
    
-  <!--
-  <nav class="container-fluid" id="navBar">
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-1">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-home dropbtn"> Home</button>
-      </div>
-      <div class="col-md-1 dropdown">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-user dropbtn"> About</button>
-        <div id="about" class="dropdown-content">
-          <div class="container">
-            <h4>Our Leaders</h4>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-th-list dropbtn"> Beliefs</button>
-      </div>
-      <div class="col-md-1">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-globe dropbtn"> Ministries</button>  
-      </div>
-      <div class="col-md-1">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-camera dropbtn"> Media</button>
-      </div>    
-      <div class="col-md-1">
-        <button onclick="dropDownFunction()" class="glyphicon glyphicon-calendar dropbtn"> Calender</button>
-      </div>
-
-      <div class="col-md-1 dropdown">
-        <button onclick="givingDropdown()" class="glyphicon glyphicon-credit-card dropbtn"> Giving</button>
-        <div id="givingDropdown" class="container-fluid dropdown-content">
-          <p>You can contribute to the ministry either <a href="#">online</a>
-          or by texting a dollar amount to our text-to-give number <a>972</a>
-          </p>
-          <br>
-          <span>Online</span>
-        </div>
-      </div>
-
-      <div class="col-md-1 dropdown">
-        <button onclick="contactDropdown()" class="glyphicon glyphicon-phone dropbtn"> Contact</button>
-        <div id="contactDropdown" class="container-fluid dropdown-content">
-          <h4>How to Reach Us</h4>
-          <br>
-          <br>
-          <span class="contactInfo">Our mailing address:<address> PO Box 913, Forney, TX  75126</address></span>
-          <br>
-          
-        </div>
-      </div>
-      <div class="col-md-2"></div>
-    </div>  
-  </nav>
-  -->
   <br>
 
   <nav class="container-fluid">
     <div class="row">
-      <div class="col-md-2"></div>
-      <button class="col-md-1 tablink glyphicon glyphicon-home" onclick="openPage('Home', this, 'red')" id="defaultOpen"> Home</button>
-      <button class="col-md-1 tablink glyphicon glyphicon-user" onclick="openPage('AboutUs', this, 'green')" > About</button>
-      <button class="col-md-1 tablink glyphicon glyphicon-globe" onclick="openPage('Ministries', this, 'blue')"> Ministries</button>
-      <button class="col-md-1 tablink glyphicon glyphicon-camera" onclick="openPage('Media', this, 'orange')"> Media</button>
-      <button class="col-md-1 tablink glyphicon glyphicon-list" onclick="openPage('Beliefs', this, 'brown')"> Beliefs</button>
-      <button class="col-md-1 tablink glyphicon glyphicon-calendar" onclick="openPage('Calendar', this, 'slategray')"> Calendar</button>
-      <button class="col-md-1 tablink glyphicon glyphicon-credit-card" onclick="openPage('Giving', this, 'black')"> Giving</button>
-      <button class="col-md-1 tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this, 'maroon')"> Contact</button>
-      <div class="col-md-2"></div>
+      <button class="tablink glyphicon glyphicon-home" onclick="openPage('Home', this)" id="defaultOpen"> Home</button>
+      <button class="tablink glyphicon glyphicon-user" onclick="openPage('AboutUs', this)" > About</button>
+      <button class="tablink glyphicon glyphicon-globe" onclick="openPage('Ministries', this)"> Ministries</button>
+      <button class="tablink glyphicon glyphicon-camera" onclick="openPage('Media', this)"> Media</button>
+      <button class="tablink glyphicon glyphicon-list" onclick="openPage('Beliefs', this)"> Beliefs</button>
+      <button class="tablink glyphicon glyphicon-calendar" onclick="openPage('Calendar', this)"> Calendar</button>
+      <button class="tablink glyphicon glyphicon-credit-card" onclick="openPage('Giving', this)"> Giving</button>
+      <button class="tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this)"> Contact</button>
     </div>
 
     <div id="Home" class="tabcontent">
@@ -171,12 +114,23 @@
       <h3>There are Several Ways to Give</h3>
     </div>
 
-    <div id="Contact" class="tabcontent">
-      <h3>How to Contact Us:</h3>
-      <span>You can visit us at <address> 10630 FM 740 Forney, TX 75126</address>
-      <img src="/Map location.JPG" width="500" id="mapLocation"/>
-      <br>
-      <span>Or follow us on <a href="www.facebook.com/peoplesfellowshipchurch"><img src="/FB logo" width="13" alt="Facebook Logo"> Facebook</a></span>
+    <div id="Contact" class="container-fluid tabcontent">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>How to Contact Us:</h3>
+          <span>You can visit us at 
+            <address> 10630 FM 740 Forney, TX 75126</address>
+            <img src="/Map location.JPG" width="500" id="mapLocation"/>
+          </span>
+        </div> 
+        <div class="col-lg-6">
+          <span>Or follow us on Social
+            <a href="www.facebook.com/peoplesfellowshipchurch"><img src="/FB logo" width="13" alt="Facebook Logo"></a>
+            <a href="#"><Img src="#" alt="Youtube Logo"></a>
+            <a href="#"><Img src="#" alt="Instagram Logo"/></a>
+          </span>
+        </div>
+      </div>
     </div>
   </nav>
 

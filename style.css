@@ -74,18 +74,23 @@ body {
   margin-bottom: 25px;
 }
 
+nav {
+  max-width: 1000px;
+  position: relative;
+  float: inherit;
+}
 
 /* Style tab links */
 .tablink {
   background-color: #555;
   color: white;
-  float: left;
+  position: relative;
+  float: inherit;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 10px 7px;
   font-size: 17px;
-  /* width: 25%; */
 }
 
 .tablink:hover {
@@ -100,6 +105,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 
 #Home {background-color: red;}
 #AboutUs {background-color: green;}
