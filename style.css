@@ -106,8 +106,7 @@ nav {
   width: 100%;
 }
 
-
-#Home {background-color: red;}
+#Home {background-color: rgba(90, 79, 79, 0.849);}
 #AboutUs {background-color: green;}
 #Ministries {background-color: blue;}
 #Media {background-color: orange;}
@@ -115,6 +114,7 @@ nav {
 #Calendar {background-color: slategrey;}
 #Giving {background-color: black;}
 #Contact {background-color: maroon;}
+
 
 #mapLocation {
   margin-bottom: 5%;
