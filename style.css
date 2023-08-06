@@ -4,6 +4,10 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+header {
+  background-color: #555;
+}
+
 /*slideshow */
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -12,9 +16,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 2000px;
   position: relative;
   margin: auto;
+  background-color: #555
 }
 
 /* Caption text */
@@ -52,6 +57,7 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -63,33 +69,34 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
 
 
-body {
-  background-image: rgb(243, 243, 203);
-  margin-bottom: 25px;
-}
-
 nav {
-  max-width: 1000px;
-  position: relative;
-  float: inherit;
+  max-width: 2000px;
+  flex: content;
+  justify-content: space-around;
+}
+body {
+  background-image: #555;
+  width: 90%;
+}
+span {
+  padding-bottom: 4%;
 }
 
 /* Style tab links */
 .tablink {
   background-color: #555;
   color: white;
-  position: relative;
-  float: inherit;
   border: none;
-  outline: none;
+  outline: black;
   cursor: pointer;
-  padding: 10px 7px;
+  /*width: 134.07px;*/ 
+  padding: 10px 10px;
+   
   font-size: 17px;
 }
 
@@ -106,16 +113,18 @@ nav {
   width: 100%;
 }
 
+#Home {background-color: #555;}
+#AboutUs {background-color: #555;}
+#Media {background-color: #555;}
+#Calendar {background-color:#555;}
+#Giving {background-color: #555;}
+#Contact {background-color: #555;}
 
-#Home {background-color: red;}
-#AboutUs {background-color: green;}
-#Ministries {background-color: blue;}
-#Media {background-color: orange;}
-#Beliefs {background-color: brown;}
-#Calendar {background-color: slategrey;}
-#Giving {background-color: black;}
-#Contact {background-color: maroon;}
 
 #mapLocation {
   margin-bottom: 5%;
+}
+
+footer {
+  background-color: #555;
 }

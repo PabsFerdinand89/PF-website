@@ -41,21 +41,19 @@
     <span class="dot"></span> 
     <span class="dot"></span> 
   </div>
-   
-  <br>
 
   <nav class="container-fluid">
     <div class="row">
-      <button class="tablink glyphicon glyphicon-home" onclick="openPage('Home', this)" id="defaultOpen"> Home</button>
-      <button class="tablink glyphicon glyphicon-user" onclick="openPage('AboutUs', this)" > About</button>
-      <button class="tablink glyphicon glyphicon-globe" onclick="openPage('Ministries', this)"> Ministries</button>
-      <button class="tablink glyphicon glyphicon-camera" onclick="openPage('Media', this)"> Media</button>
-      <button class="tablink glyphicon glyphicon-list" onclick="openPage('Beliefs', this)"> Beliefs</button>
-      <button class="tablink glyphicon glyphicon-calendar" onclick="openPage('Calendar', this)"> Calendar</button>
-      <button class="tablink glyphicon glyphicon-credit-card" onclick="openPage('Giving', this)"> Giving</button>
-      <button class="tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this)"> Contact</button>
+      <button class="col-sm-2 tablink glyphicon glyphicon-home" onclick="openPage('Home', this)" id="defaultOpen"> Home</button>
+      <button class="col-sm-2 tablink glyphicon glyphicon-user" onclick="openPage('AboutUs', this)" > About</button>
+      <button class="col-sm-2 tablink glyphicon glyphicon-camera" onclick="openPage('Media', this)"> Media</button>
+      <button class="col-sm-2 tablink glyphicon glyphicon-calendar" onclick="openPage('Calendar', this)"> Calendar</button>
+      <button class="col-sm-2 tablink glyphicon glyphicon-credit-card" onclick="openPage('Giving', this)"> Giving</button>
+      <button class="col-sm-2 tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this)"> Contact</button>
     </div>
+  </nav>
 
+  <body class="container-fluid">
     <div id="Home" class="tabcontent">
       <h3>Welcome to People's Fellowship</h3>
       <p>Here at People's Fellowship, we love people - all people. 
@@ -69,42 +67,47 @@
 
     <div id="AboutUs" class="tabcontent">
       <h3>Our Leadership</h3>
-      <p>
+      <ul>
         <span><img src="" width="7" alt=""/>Senior Pastor: Rick and Vickie Smith</span>
         <br>
         <span><img src="" width="7" alt=""/>Associate Pastor: Charles and Pamela Kruetzer</span>
         <br>
-        <span><img src="" width="7" alt=""/>Youth Pastor: Chris & Kandice Seyffert</span>
+        <span><img src="" width="7" alt=""/>Youth Pastor: Chris Seyffert</span>
         <br>
-        <span><img src="" width="7" alt=""/>Children's Ministry Leader: Kacia Harmon</span>
+        <span><img src="" width="7" alt=""/>Children's Ministry: Kacia Harmon</span>
         <br>
-        <span><img src="" width="7" alt=""/>Music Ministry Leader: Charlotte Haliman</span>
-      </p> 
+        <span><img src="" width="7" alt=""/>Music Ministry: Charlotte Haliman</span>
+        <br>
+        <span><img src="" width="7" alt=""/>Overcomers: Vickie Smith</span> 
+      </ul>
+      <div id="Ministries">
+        <h3>Ministries we offer: Wednesday nights, 6:30pm</h3>
+        <ul>
+          <h4>Wednesday Night Bible Study:</h4>
+          <span>We take a deep dive into God's word. Come join us as we explore more about God's plans and purposes for our lives.</span>
+          <br/>
+          <h4>Youth Ministry:</h4>
+          <span>Our teens and youth not only socialize and have fun, but they are also equipped and challenged by God's word every Wednesday night. Don't miss out!</span>
+          <br/>
+          <h4>Overcomers:</h4>
+          <span>We have a heart of compassion for those who have stuggled or are struggling with addiction. We provide a safe space where we minister to those with these struggles.</span>
+          <br/>
+        </ul>
+      </div>
+      <div id="Beliefs">
+        <h3>Our Core Beliefs</h3>
+        <p>As an Assemblies of God Church, we adhere to the 16 Fundamental Doctrines of the Assemblies of God. For more details on these doctrines, click <a href="https://ag.org/Beliefs/Statement-of-Fundamental-Truths">here</a>.</p>
+      </div>
     </div>
 
-    <div id="Ministries" class="tabcontent">
-      <h3>Ministries we offer</h3>
-      <p>
-        <span>Wednesday Night Bible Study</span>
-        <br>
-        <span>Youth Ministry</span>
-        <br>
-        <span>Overcomers</span>
-        <br>
-        
-      </p>
-    </div>
+    
 
     <div id="Media" class="tabcontent">
       <h3>Service Livetreams</h3>
       <h3>Photos</h3>
-      <video src=""></video>
     </div>
 
-    <div id="Beliefs" class="tabcontent">
-      <h3>About</h3>
-      <p>Who we are and what we do.</p>
-    </div>
+    
     
     <div id="Calendar" class="tabcontent">
       <h3>Our upcoming events. Put These dates on your calendar:</h3>
@@ -120,7 +123,7 @@
           <h3>How to Contact Us:</h3>
           <span>You can visit us at 
             <address> 10630 FM 740 Forney, TX 75126</address>
-            <img src="/Map location.JPG" width="500" id="mapLocation"/>
+            <img class="img-responsive" src="/Map location.JPG" width="500" id="mapLocation"/>
           </span>
         </div> 
         <div class="col-lg-6">
@@ -132,12 +135,10 @@
         </div>
       </div>
     </div>
-  </nav>
-
-  
-
+  </body>
+    
   <footer>
-    <!-- slideshow pic gallery-->
+    
   </footer>
   
 </html>
