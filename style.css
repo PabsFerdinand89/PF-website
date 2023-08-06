@@ -16,7 +16,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 2000px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
   background-color: #555
@@ -80,17 +80,22 @@ nav {
   justify-content: space-around;
 }
 body {
-  background-image: #555;
-  width: 90%;
+  background-image: rgb(243, 243, 203);
+  margin-bottom: 25px;
 }
-span {
-  padding-bottom: 4%;
+
+nav {
+  max-width: 1000px;
+  position: relative;
+  float: inherit;
 }
 
 /* Style tab links */
 .tablink {
   background-color: #555;
   color: white;
+  position: relative;
+  float: inherit;
   border: none;
   outline: black;
   cursor: pointer;
@@ -113,12 +118,6 @@ span {
   width: 100%;
 }
 
-#Home {background-color: #555;}
-#AboutUs {background-color: #555;}
-#Media {background-color: #555;}
-#Calendar {background-color:#555;}
-#Giving {background-color: #555;}
-#Contact {background-color: #555;}
 
 
 #mapLocation {
