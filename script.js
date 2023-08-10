@@ -39,3 +39,5 @@ $("#defaultOpen").click();
 
 
 //Bible verse API
+var dailyBibleVerse = window.open('https://www.christianity.com/bible/daily-bible-verse/');
+  return false;
