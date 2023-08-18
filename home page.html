@@ -3,154 +3,135 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    
+        
     <title>People's Fellowship</title>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js" defer></script>
     <script src="script.js" defer></script>
   </head>
 
- <!--announcement slideshow-->
+ 
   <header class="container-fluid text-center text-wrap">
     <p><H1>Welcome to People's Fellowship</H1></p>
   </header>
   
-  <!-- Slideshow container -->
+
+  <!--announcement slideshow-->
   <div class="slideshow-container container-fluid">
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
-      <div class="text">Announcement 1</div>
-    </div> 
+      <img src="" style="width:auto">
+      <div class="text">Caption Text</div>
+    </div>
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
-      <div class="text">Announcement 2</div>
+      <img src="img2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
     </div>
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
-      <div class="text">Announcement 3</div>
-    </div>  
+      <img src="/banner2.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
+  <!-- The dots/circles -->
   <div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
   <nav class="container-fluid">
-    <div class="row">
-      <button class="col-md-2 tablink glyphicon glyphicon-home" onclick="openPage('Home', this)" id="defaultOpen"> Home</button>
-      <button class="col-md-2 tablink glyphicon glyphicon-user" onclick="openPage('AboutUs', this)" > About</button>
-      <button class="col-md-2 tablink glyphicon glyphicon-camera" onclick="openPage('Media', this)"> Media</button>
-      <button class="col-md-2 tablink glyphicon glyphicon-calendar" onclick="openPage('Calendar', this)"> Calendar</button>
-      <button class="col-md-2 tablink glyphicon glyphicon-credit-card" onclick="openPage('Giving', this)"> Giving</button>
-      <button class="col-md-2 tablink glyphicon glyphicon-phone" onclick="openPage('Contact', this)"> Contact</button>
-    </div>
+    <button class="tablink" onclick="openPage('Home', this, '#00458B')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('News', this, '#00458B')" >News</button>
+    <button class="tablink" onclick="openPage('Contact', this, '#00458B')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, '#00458B')">About</button>
   </nav>
-
+  
   <body class="container-fluid">
-    <div id="Home" class="tabcontent">
-      <h3>Welcome to People's Fellowship</h3>
-      <p>Here at People's Fellowship, we love people - all people. 
-        Our goal is to be hope for the hopeless, healing for the hurting, and salvation through Jesus Christ to those who are lost. 
-        We offer Bible-based preaching and worship, and a time of prayer for people's needs during each service. 
-        Although we are an Assemblies of God church, our church family has a variety of backgrounds. 
-        We offer a friendly, welcoming atmosphere from the moment you first walk in, up until you leave.
-        We hope to see you in one of our gatherings soon. God bless you!
-      </p>
-    </div>
-
-    <div id="AboutUs" class="tabcontent">
-      <h3>Our Leadership</h3>
-      <ul>
-        <span><img src="" width="7" alt=""/>Senior Pastor: Rick and Vickie Smith</span>
-        <br>
-        <span><img src="" width="7" alt=""/>Associate Pastor: Charles and Pamela Kruetzer</span>
-        <br>
-        <span><img src="" width="7" alt=""/>Youth Pastor: Chris Seyffert</span>
-        <br>
-        <span><img src="" width="7" alt=""/>Children's Ministry: Kacia Harmon</span>
-        <br>
-        <span><img src="" width="7" alt=""/>Music Ministry: Charlotte Haliman</span>
-        <br>
-        <span><img src="" width="7" alt=""/>Overcomers: Vickie Smith</span> 
-      </ul>
-      <div id="Ministries">
-        <h3>Ministries we offer: Wednesday nights, 6:30pm</h3>
-        <ul>
-          <h4>Wednesday Night Bible Study:</h4>
-          <span>We take a deep dive into God's word. Come join us as we explore more about God's plans and purposes for our lives.</span>
-          <br/>
-          <h4>Youth Ministry:</h4>
-          <span>Our teens and youth not only socialize and have fun, but they are also equipped and challenged by God's word every Wednesday night. Don't miss out!</span>
-          <br/>
-          <h4>Overcomers:</h4>
-          <span>We have a heart of compassion for those who have stuggled or are struggling with addiction. We provide a safe space where we minister to those with these struggles.</span>
-          <br/>
-        </ul>
+    <main>
+      <div id="Home" class="tabcontent">
+        <h3>Welcome to People's Fellowship</h3>
+          <p>Here at People's Fellowship, we love people - all people. 
+            Our goal is to be hope for the hopeless, healing for the hurting, and salvation through Jesus Christ to those who are lost. 
+            We offer Bible-based preaching and worship, and a time of prayer for people's needs during each service. 
+            Although we are an Assemblies of God church, our church family has a variety of backgrounds. 
+            We offer a friendly, welcoming atmosphere from the moment you first walk in, up until you leave.
+            We hope to see you in one of our gatherings soon. God bless you!
+          </p>
       </div>
-      <div id="Beliefs">
-        <h3>Our Core Beliefs</h3>
-        <p>As an Assemblies of God Church, we adhere to the 16 Fundamental Doctrines of the Assemblies of God. For more details on these doctrines, click <a href="https://ag.org/Beliefs/Statement-of-Fundamental-Truths">here</a>.</p>
+      
+      <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!</p> 
       </div>
-    </div>
-
-    
-
-    <div id="Media" class="tabcontent">
-      <h3>Service Livetreams</h3>
-      <h3>Photos</h3>
-    </div>
-
-    
-    
-    <div id="Calendar" class="tabcontent">
-      <h3>Our upcoming events. Put These dates on your calendar:</h3>
-    </div>
-
-    <div id="Giving" class="tabcontent">
-      <h3>There are Several Ways to Give</h3>
-    </div>
-
-    <div id="Contact" class="container-fluid tabcontent">
-      <div class="row">
-        <div class="col-lg-6">
-          <h3>How to Contact Us:</h3>
-          <span>You can visit us at 
-            <address> 10630 FM 740 Forney, TX 75126</address>
-            <img class="img-responsive" src="/Map location.JPG" width="500" id="mapLocation"/>
-          </span>
-        </div> 
-        <div class="col-lg-6">
-          <span>Or follow us on Social
-            <a href="www.facebook.com/peoplesfellowshipchurch"><img src="/FB logo" width="13" alt="Facebook Logo"></a>
-            <a href="#"><Img src="#" alt="Youtube Logo"></a>
-            <a href="#"><Img src="#" alt="Instagram Logo"/></a>
-          </span>
-        </div>
+      
+      <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
       </div>
-    </div>
+      
+      <div id="About" class="tabcontent">
+        <h3>Our Leadership</h3>
+          <ul>
+            <span><img src="" width="7" alt=""/>Senior Pastor: Rick and Vickie Smith</span>
+            <br>
+            <span><img src="" width="7" alt=""/>Associate Pastor: Charles and Pamela Kruetzer</span>
+            <br>
+            <span><img src="" width="7" alt=""/>Youth Pastor: Chris Seyffert</span>
+            <br>
+            <span><img src="" width="7" alt=""/>Children's Ministry: Kacia Harmon</span>
+            <br>
+            <span><img src="" width="7" alt=""/>Music Ministry: Charlotte Haliman</span>
+            <br>
+            <span><img src="" width="7" alt=""/>Overcomers: Vickie Smith</span> 
+          </ul>
+          <div id="Ministries">
+            <h3>Ministries we offer: Wednesday nights, 6:30pm</h3>
+            <ul>
+              <h4>Wednesday Night Bible Study:</h4>
+              <span>We take a deep dive into God's word. Come join us as we explore more about God's plans and purposes for our lives.</span>
+              <br/>
+              <h4>Youth Ministry:</h4>
+              <span>Our teens and youth not only socialize and have fun, but they are also equipped and challenged by God's word every Wednesday night. Don't miss out!</span>
+              <br/>
+              <h4>Overcomers:</h4>
+              <span>We have a heart of compassion for those who have stuggled or are struggling with addiction. We provide a safe space where we minister to those with these struggles.</span>
+              <br/>
+            </ul>
+          </div>
+          <div id="Beliefs">
+            <h3>Our Core Beliefs</h3>
+            <p>As an Assemblies of God Church, we adhere to the 16 Fundamental Doctrines of the Assemblies of God. For more details on these doctrines, click <a href="https://ag.org/Beliefs/Statement-of-Fundamental-Truths">here</a>.</p>
+          </div>
+      </div>
+    </main>
   </body>
-    
-  <footer>
-    <!-- START DAILY BIBLE VERSE CODE FROM Christianity.com -->
-    <div style="background:#FFFFFF;border:0px solid #000000;padding:2px 0px 3px;margin:0px;">
-      <p style="text-align:center;color:#000000;padding:0px;margin:0px 4px;border:0px;font-family:Arial,sans-serif;font-size:18px;">
-        <a id="dailyBibleVerse" onclick="dailyBibleVerse()" href="https://www.christianity.com/bible/daily-bible-verse/" style="text-decoration:none;">Daily Bible Verse</a>
-      </p>
-      <p style="text-align:left;color:#000000;padding:0px;margin:3px 4px 0px;border:0px;font-family:Arial,sans-serif;font-size:12px;">
+  
+  
+  
+  <footer class="container-fluid">
+    <div>
+      <h4 id="dailyBibleVerse">
+        <a id="reference" href="https://www.christianity.com/bible/daily-bible-verse/" onclick="javascript:window.open('https://www.christianity.com/bible/daily-bible-verse/');return false">Daily Bible Verse</a>
+      </h4>
+      <!-- daily verse-->
+      <p id="verse">
         <script type="text/javascript" src="https://www.christianity.com/bible/syndicate.php?content=dbv&amp;type=js2&amp;tw=auto&amp;tbg=FFFFFF&amp;bw=0&amp;bc=000000&amp;ta=C&amp;tc=000000&amp;tf=Arial&amp;ts=18&amp;ty=B&amp;va=L&amp;vc=000000&amp;vf=Arial&amp;vs=12&amp;tt=1&amp;trn=NIV"></script>
       </p>
-      <p style="text-align:left;color:#000000;padding:0px;margin:3px 4px 0px;border:0px;font-family:Arial,sans-serif;font-size:12px;">Provided by <a href="https://www.christianity.com/bible/" style="color:#000000;font-family:Arial,sans-serif;font-size:12px;text-decoration:underline;padding:0px;margin:0px;border:0px;background:#FFFFFF;" onclick="javascript:window.open('https://www.christianity.com/bible/');return false">Christianity.com Bible Search</a></p>
+      <sub>
+        <p id="providedBy" style="text-align:left; color:#000000; margin:3px 4px 0px; font-family:Arial,sans-serif; font-size:12px;">Provided by <a id="christianityDotCom" href="https://www.christianity.com/bible/" style="color:#000000;font-family:Arial,sans-serif;font-size:12px;text-decoration:underline;padding:0px;margin:0px;border:0px;background: #3FD2C7;" onclick="javascript:window.open('https://www.christianity.com/bible/');return false">Christianity.com Bible Search</a></p>
+        Copyright &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script>
+      </sub>      
     </div>
-    <!-- END DAILY BIBLE VERSE CODE FROM Christianity.com -->
   </footer>
 
 </html> 
+
