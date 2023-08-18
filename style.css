@@ -121,15 +121,17 @@ body, html {
 }
 
 #Home {background-color: #00458B;}
-#News {background-color: #00458B;}
-#Contact {background-color: #00458B;}
 #About {background-color: #00458B;}
+#Calendar {background-color: #00458B;}
+#Giving {background-color: #00458B;}
+#Contact {background-color: #00458B;}
 
-
+/*tab content*/
 #mapLocation {
   margin-bottom: 5%;
 }
 
+/*footer*/
 footer {
   background-color: #5EBEC4;
 }
