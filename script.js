@@ -35,3 +35,36 @@ $("#defaultOpen").click();
 
 
 //Bible verse API
+function dailyBibleVerse() {
+  $('#dailyBibleVerse').onClick(window.open('https://www.christianity.com/bible/daily-bible-verse/'));
+  return;
+}
+
+function christianityDotCom() {
+  $('#ChristianityDotCom').onClick(window.open('https://www.christianity.com/bible/'));
+  return;
+}
+
+//Calendar
+let myCalendar = createCalendar({
+  options: {
+    class: 'my-class',
+    
+    // You can pass an ID. If you don't, one will be generated for you
+    id: 'my-id'
+  },
+  data: {
+    // Event title
+    title: 'Camp Meeting',
+    // Event start date
+    start: new Date('November 15, 2013 19:00'),
+    // Event duration (IN MINUTES)
+    duration: 120, 
+    // Event Address
+    address: '10630 FM 740 Forney, TX 75126',
+    // Event Description
+    description: 'Prepare for an outpouring!.'
+  }
+});
+
+$('#addToCalendar').appendChild(myCalendar);

@@ -1,9 +1,8 @@
 body, html {
   height: 100%;
   width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Arial,sans-serif;
 }
-
 
 /*slideshow */
 * {box-sizing:border-box}
@@ -103,7 +102,6 @@ body, html {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
   font-size: 17px;
   width: 25%;
 }
@@ -117,18 +115,20 @@ body, html {
   color: white;
   display: none;
   padding: 100px 20px;
-  height: 100%;
+
 }
 
 #Home {background-color: #00458B;}
 #About {background-color: #00458B;}
 #Calendar {background-color: #00458B;}
 #Giving {background-color: #00458B;}
-#Contact {background-color: #00458B;}
+#Contact {background-color: #27445f;}
 
 /*tab content*/
 #mapLocation {
-  margin-bottom: 5%;
+  margin: 15px;
+  width: 50%;
+  height: 250px;
 }
 
 /*footer*/
