@@ -89,8 +89,8 @@ body, html {
 }
 
 @keyframes fade {
-  from {opacity: 1}
-  to {opacity: .25}
+  from {opacity: .5}
+  to {opacity: 1}
 }
 
 

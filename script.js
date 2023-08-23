@@ -43,6 +43,3 @@ function christianityDotCom() {
   $('#ChristianityDotCom').onClick(window.open('https://www.christianity.com/bible/'));
   return;
 }
-function copywriteSymbol() {
-  $("#Copyright").write(new Date().getFullYear());
-}
