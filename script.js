@@ -43,3 +43,9 @@ function christianityDotCom() {
   $('#ChristianityDotCom').onClick(window.open('https://www.christianity.com/bible/'));
   return;
 }
+
+window.addeventasync = function(){
+  addeventatc.settings({
+    mouse      : true
+  });
+};
