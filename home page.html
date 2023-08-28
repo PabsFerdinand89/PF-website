@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.addevent.com/libs/atc/themes/fff-theme-3/theme.css" type="text/css" media="all" />
     
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js" defer></script>
-    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js" async defer></script>
+    <script src="script.js" async defer></script>
   </head>
 
  
@@ -62,20 +63,22 @@
 
     <div id="Home" class="tabcontent">
       <div class="container-sm justify-content-around m-4">
-        <h3>Welcome to People's Fellowship</h3>
-        <p>Here at People's Fellowship, we love people - all people. 
+        <h3 class="row-cols-1 text-center m-auto">Welcome to People's Fellowship</h3>
+        <p class="row m-3 text-justify">Here at People's Fellowship, we love people - all people. 
           Our goal is to be hope for the hopeless, healing for the hurting, and salvation through Jesus Christ to those who are lost. 
           We offer Bible-based preaching and worship, and a time of prayer for people's needs during each service. 
           Although we are an Assemblies of God church, our church family has a variety of backgrounds. 
           We offer a friendly, welcoming atmosphere from the moment you first walk in, up until you leave.
           We hope to see you in one of our gatherings: 
         </p>
-        <ul>
-          <p>Sunday Morning @10:30am</p>
-          <p>Wednesday Nights @6:30pm</p>
-          <p>Thursday Morning Prayer @11:30am</p>
-        </ul>
-        <em class="m-4">God Bless You!</em>
+        <p class="row m-5">
+          <span class="col-sm-4 text-center">Sunday Morning @10:30am</span>
+          <span class="col-sm-4 text-center">Wednesday Nights @6:30pm</span>
+          <span class="col-sm-4 text-center">Thursday Morning Prayer @11:30am</span>
+        </p>
+        <h4 class="row-cols-1 text-center">
+          <em>God Bless You!</em>
+        </h4>
       </div>
     </div>
     
@@ -119,12 +122,11 @@
   
     <div id="Calendar" class="tabcontent">
       <div class="container-sm justify-content-around">
-        
         <h3 class="mb-5">Mark These dates on your Calendar</h3>
+
           <div class="row mb-3">
             <img src="" class="col-sm-2"/>
-            <span class="col-sm-5">Sep. 24th, 2023 – Evangelist Jason Stidham</span>
-            <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+            <span class="col-sm-5">Sep. 24th, 2023 - Evangelist Jason Stidham</span>
             <div title="Add to Calendar" class="addeventatc col-sm-5 text-center" data-intel="true">
               Add to Calendar
               <span class="start">09/24/2023 10:30 AM</span>
@@ -136,12 +138,10 @@
               <span class="alarm_reminder">1440</span>
             </div>
           </div>
-          </br>
           
           <div class="row mb-5">
             <img src="" class="col-sm-2">
-            <span class="col-sm-5">Oct.15th, 2023 – Ron & Maria Sawvell <small>(date pending)</small></span>
-            <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+            <span class="col-sm-5">Oct.15th, 2023 - Ron & Maria Sawvell <small>(date pending)</small></span>
             <div title="Add to Calendar" class="addeventatc col-sm-5 text-center" data-intel="true">
               Add to Calendar
               <span class="start">10/15/2023 10:30 AM</span>
@@ -157,7 +157,6 @@
           <div class="row mb-5">
             <img src="" class="col-sm-2">
             <span class="col-sm-5">Nov. 3-5, 2023 - Camp Meeting</span>
-            <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
             <div title="Add to Calendar" class="addeventatc col-sm-5 text-center" data-intel="true">
               Add to Calendar
               <span class="start">11/03/2023 6:30 PM</span>
@@ -172,8 +171,7 @@
           
           <div class="row mb-5">
             <img src="" class="col-sm-2">
-            <span class="col-sm-5">Dec. 24th, 2023 – Dr. Doyle Jones</span>
-            <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+            <span class="col-sm-5">Dec. 24th, 2023 - Dr. Doyle Jones</span>
             <div title="Add to Calendar" class="addeventatc col-sm-5 text-center" data-intel="true">
               Add to Calendar
               <span class="start">12/24/2023 10:30 AM</span>
@@ -217,9 +215,31 @@
       </div>       
     
     <div id="Media" class="tabcontent">
-      <div class="container justify-content-around">
-        <p>Here we post images and videos of our services and special events. <em>Enjoy!</em></p>
-        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpeoplesfellowshipchurch%2Fvideos%2F2246419408882932%2F&show_text=false&width=560&t=0" width="100%" height="600px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      <div class="container-fluid justify-content">
+        <p class="text-sm-center">Here we post images and videos of our services and special events. <em>Enjoy!</em></p>
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <iframe class="img-fluid" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpeoplesfellowshipchurch%2Fvideos%2F2246419408882932%2F&show_text=false&width=560&t=0" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="col-sm-6">
+              <iframe class="img-fluid" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpeoplesfellowshipchurch%2Fvideos%2F692561522725619%2F&show_text=false&width=560&t=0" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-6">
+              <img class="img-fluid" src="/bouncy slide.jpg" height="25%"/>
+            </div>
+            <div class="col-xl-6">
+              <img class="img-fluid" src="/making tamales.jpg" height="25%"/>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
