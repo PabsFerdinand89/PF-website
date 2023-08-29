@@ -118,19 +118,23 @@ body, html {
 
 }
 
-#Home {background-color: #00458B;}
-#About {background-color: #00458B;}
-#Calendar {background-color: #00458B;}
-#Media {background-color: #00458B;}
-#Giving {background-color: #00458B;}
+#Home {background-color: #27445f;}
+#About {background-color: #27445f;}
+#Calendar {background-color: #27445f;}
+#Media {background-color: #27445f;}
+#Giving {background-color: #27445f;}
 #Contact {background-color: #27445f;}
 
 /*tab content*/
 
-img, iframe{
-  max-height: 400px;
-  max-width: 400px;
-  object-fit: contain;
+img {
+  max-height: 100%;
+  max-width: 67.5%;
+}
+
+iframe {
+  max-height: 450px;
+  max-width: 100%;
 }
 
 #mapLocation {
