@@ -126,6 +126,13 @@ body, html {
 #Contact {background-color: #27445f;}
 
 /*tab content*/
+
+img, iframe{
+  max-height: 400px;
+  max-width: 400px;
+  object-fit: contain;
+}
+
 #mapLocation {
   margin: 15px;
   width: 50%;
