@@ -128,9 +128,9 @@ body, html {
 
 /*tab content*/
 
-.videos {
-  object-fit: fill;
-  object-position: center;
+.img-thumbnail {
+  width:20%;
+  object-fit: contain;
 }
 
 #mapLocation {
