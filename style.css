@@ -114,14 +114,15 @@ body, html {
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px;
+  padding: 75px;
   height: 100%;
+  overflow: scroll;
 }
 
 #Home {background-color: #27445f;}
-#About {background-color: #27445f; overflow: scroll;}
+#About {background-color: #27445f; }
 #Calendar {background-color: #27445f;}
-#Sermons {background-color: #27445f; overflow: scroll;}
+#Sermons {background-color: #27445f;}
 #Giving {background-color: #27445f;}
 #Contact {background-color: #27445f;}
 
@@ -133,7 +134,7 @@ a {
 #mapLocation {
   margin: 15px;
   width: 50%;
-  height: 250px;Fover
+  height: 250px;
 }
 
 iframe {
