@@ -117,10 +117,12 @@ body, html {
   padding: 75px;
   height: 100%;
   overflow: scroll;
+  background-image: url(/tab\ content\ background.JPG);
+  background-size: contain;
 }
 
 #Home {background-color: #27445f;}
-#About {background-color: #27445f; }
+#About {background-color: #27445f;}
 #Calendar {background-color: #27445f;}
 #Sermons {background-color: #27445f;}
 #Giving {background-color: #27445f;}
@@ -138,8 +140,8 @@ a {
 }
 
 iframe {
-  width: 80%;
-  margin: 12%;
+  width: 100%;
+  margin-bottom: 12px
   justify-content: center;
 }
 
