@@ -116,7 +116,7 @@ body, html {
   display: none;
   padding: 75px;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
   background-image: url(/tab\ content\ background.JPG);
   background-size: contain;
 }
@@ -124,7 +124,7 @@ body, html {
 #Home {background-color: #27445f;}
 #About {background-color: #27445f;}
 #Calendar {background-color: #27445f;}
-#Sermons {background-color: #27445f;}
+#Media {background-color: #27445f;}
 #Giving {background-color: #27445f;}
 #Contact {background-color: #27445f;}
 
@@ -168,6 +168,7 @@ footer {
   text-align:left; 
   margin: 25px;
   font-size:12px;
+  color:#000000;
 }
 
 sub, #providedBy {
@@ -185,6 +186,5 @@ sub, #providedBy {
   text-decoration:underline;
   padding:0px;
   margin:0px;
-  border:0px;
-  background: #3FD2C7;
+  border:0px; 
 }
