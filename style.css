@@ -134,10 +134,8 @@ a {
   margin-left: 5px;
 }
 
-#mapLocation {
-  margin: 15px;
-  width: 50%;
-  height: 250px;
+h3 {
+  justify-content: center;
 }
 
 iframe {
