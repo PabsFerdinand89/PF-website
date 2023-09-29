@@ -6,6 +6,12 @@ body, html {
   box-sizing: border-box;
 }
 
+header, nav {
+  width: max-content;
+  max-width: 1000px;
+}
+
+
 /*slideshow */
 * {box-sizing:border-box}
 
@@ -20,8 +26,6 @@ body, html {
 .mySlides {
   display: none;
 }
-
-
 
 /* Fading animation */
 .fade {
@@ -56,9 +60,10 @@ body, html {
   display: none;
   padding: 75px;
   height: 100%;
+  width: 100%;
   overflow: auto;
   background-image: url(/tab\ content\ background.JPG);
-  background-size:cover;
+  background-size: cover;
 }
 
 #Home {background-color: #27445f;}
@@ -97,6 +102,7 @@ iframe {
 /*footer*/
 footer {
   background-color: #5EBEC4;
+  width: max-content;
 }
 
 #dailyBibleVerse {
@@ -134,6 +140,6 @@ sub, #providedBy {
   font-size:12px;
   text-decoration:underline;
   padding:0px;
-  margin:0px;
-  border:0px; 
+  margin-bottom: 25px;
+  border:25px; 
 }

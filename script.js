@@ -44,8 +44,3 @@ function christianityDotCom() {
   return;
 }
 
-window.addeventasync = function(){
-  addeventatc.settings({
-    mouse: true
-  });
-};
