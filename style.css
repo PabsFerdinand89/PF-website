@@ -4,6 +4,7 @@ body, html {
   font-family: Arial,sans-serif, Helvetica;
   margin: 0;
   box-sizing: border-box;
+  background-color: #27445f;
 }
 
 header, nav {
@@ -11,6 +12,9 @@ header, nav {
   max-width: 1000px;
 }
 
+.container-sm-fluid {
+  background-color: #27445f;
+}
 
 /*slideshow */
 * {box-sizing:border-box}
@@ -20,6 +24,7 @@ header, nav {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background-color: #27445f;
 }
 
 /* Hide the images by default */
@@ -63,7 +68,7 @@ header, nav {
   width: 100%;
   overflow: auto;
   background-image: url(/tab\ content\ background.JPG);
-  background-size: cover;
+  background-size: contain;
 }
 
 #Home {background-color: #27445f;}
