@@ -12,6 +12,11 @@ header, nav {
   max-width: 1000px;
 }
 
+#mainHeader {
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .container-sm-fluid {
   background-color: #27445f;
 }
@@ -26,6 +31,12 @@ header, nav {
   margin: auto;
   background-color: #27445f;
 }
+
+#welcome{width:1000px; height: 600px;}
+#prayer{width:1000px; height: 600px;}
+#follow{width:1000px; height: 600px;}
+#bible{width:1000px; height: 600px;}
+#holidays{width:1000px; height: 600px;}
 
 /* Hide the images by default */
 .mySlides {
@@ -77,6 +88,20 @@ header, nav {
 #Media {background-color: #27445f;}
 #Giving {background-color: #27445f;}
 #Contact {background-color: #27445f;}
+
+#RickVickieSmith{background-color: #8ed4cf;}
+#ChuckKreutzer{background-color: #8ed4cf;}
+#ChrisSeyffert{background-color: #8ed4cf;}
+#KaciaHarmon{background-color: #8ed4cf;}
+#CharlotteHaliman{background-color: #8ed4cf;}
+
+iframe{
+  width: 100%;
+  height: 500px;
+  border: none;
+  overflow: hidden;
+}
+
 
 /*tab content*/
 a {

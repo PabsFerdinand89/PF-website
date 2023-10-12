@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="english">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,26 +17,26 @@
 
  
   <header class="container-fluid text-center text-wrap">
-    <h1 class="col-12 text-center" style="color:white; font-family:Arial, Helvetica, sans-serif;">Welcome to People's Fellowship!</h1>
+    <h1 class="col-12 text-center" id="mainHeader">Welcome to People's Fellowship!</h1>
   </header>
   
 
   <!--announcement slideshow-->
   <div class="slideshow-container container-sm-fluid justify-content-center mt-5 mb-5">
     <div class="mySlides fade">
-      <img src="/images/Welcome.PNG" class="img-fluid" style="width:1000px; height: 400px;">
+      <img id="welcome" src="/images/Welcome.PNG" class="img-fluid">
     </div>
     <div class="mySlides fade">
-      <img src="/images/Bible.PNG" class="img-fluid" style="width:1000px; height: 400px;">
+      <img id="bible" src="/images/Bible.PNG" class="img-fluid">
     </div>
     <div class="mySlides fade">
-      <img src="/images/Prayer.jpg" class="img-fluid" style="width:1000px; height: 400px;">
+      <img id="prayer" src="/images/Prayer.jpg" class="img-fluid">
     </div>
     <div class="mySlides fade">
-      <img src="/images/Follow.JPG" class="img-fluid" style="width:1000px; height: 400px;">
+      <img id="follow" src="/images/Follow.JPG" class="img-fluid">
     </div>
     <div class="mySlides fade">
-      <img src="/images/Holidays.PNG" class="img-fluid" style="width:1000px; height: 400px;">
+      <img id="holidays" src="/images/Holidays.PNG" class="img-fluid">
     </div>
   </div>
 
@@ -77,22 +77,34 @@
         <h3 class="col-12 text-center mb-5">Our Leadership</h3>
         <div class="row">
           
-          <div class="col-lg-4 card text-wrap mb-5" style="background-color: #8ed4cf;">
+          <div id="RickVickieSmith" class="col-lg-12 card text-wrap mb-5">
             <img class="img-fluid" src="/images/Pastor Rick and Vicky Smith.jpg" height="100px" width="100%">
             <h4 class="title">Rick & Vickie Smith</h4>
             <h5>Senior Pastor</h5>
           </div>
 
-          <div class="col-lg-4 card text-wrap mb-5" style="background-color: #8ed4cf;">
+          <div id="ChuckKreutzer" class="col-lg-3 card text-wrap mb-5">
             <img class="img-fluid" src="/images/Chuck Kreutzer.jpg" width="100%">
             <h4 class="title">Charles Kreutzer</h4>
             <h5>Associate Pastor</h5>
           </div>
 
-          <div class="col-lg-4 card text-wrap mb-5" style="background-color: #8ed4cf;">
+          <div id="ChrisSeyffert" class="col-lg-3 card text-wrap mb-5">
             <img class="img-fluid" src="/images/Chris Seyffert.jpg" width="100%">
             <h4 class="title">Chris Seyffert</h4>
             <h5>Youth Pastor</h5>
+          </div>
+
+          <div id="KaciaHarmon" class="col-lg-3 card text-wrap mb-5">
+            <img class="img-fluid" src="" width="100%">
+            <h4 class="title">Kacia Harmon</h4>
+            <h5>Children's Pastor</h5>
+          </div>
+
+          <div id="CharlotteHaliman" class="col-lg-3 card text-wrap mb-5">
+            <img class="img-fluid" src="" width="100%">
+            <h4 class="title">Charlotte Haliman</h4>
+            <h5>worship Music Pastor</h5>
           </div>
 
         </div>
@@ -100,11 +112,11 @@
       
       <div class="row">
         <h3 class="col-12 text-center mb-5">Our Ministries:</h3>
-        <h5 class="col-sm-2">Wednesday Night Bible Study:</h5>
+        <h5 class="col-sm-2 text-wrap">Wednesday Night Bible Study:</h5>
         <span class="col-sm-10 font-weight-lighter mb-5">Join us as we take a deep dive into the word of God, exploring and discussing various Biblical topics.</span>
-        <h5 class="col-sm-2">Wednesday Night Youth:</h5>
+        <h5 class="col-sm-2 text-wrap">Wednesday Night Youth:</h5>
         <span class="col-sm-10 font-weight-lighter mb-5">Our teens also gather for a time of fellowship and bible study. Come join us!</span>
-        <h5 class="col-sm-2">Overcomers:</h5>
+        <h5 class="col-sm-2 text-wrap">Overcomers:</h5>
         <span class="col-sm-10 font-weight-lighter mb-5">We have a heart of compassion for those who are struggling with addiction or any other life crisis. We provide a safe space where we minister to those with these struggles.</span>
       </div>
       
@@ -120,8 +132,9 @@
         <h3 class="col-12 text-center mb-5">Mark these dates on your Calendar:</h3>
           
         <div class="row mb-5">
-          <span class="col-sm-6">Oct.22nd, 2023 - Crafts and Bake Sale</span>
-          <div title="Add to Calendar" class="addeventatc col-sm-6 text-center" data-intel="true">
+          <img class="img-fluid col-sm-4" src=""/>
+          <span class="col-sm-4">Oct.22nd, 2023 - Crafts and Bake Sale</span>
+          <div title="Add to Calendar" class="addeventatc col-sm-4 text-center" data-intel="true">
             Add to Calendar
             <span class="start">10/15/2023 10:30 AM</span>
             <span class="end">10/15/2023 12:00 PM</span>
@@ -134,8 +147,9 @@
         </div>
 
         <div class="row mb-5">
-          <span class="col-sm-6">Oct.27 - 28, 2023 - Ladies Retreat</span>
-          <div title="Add to Calendar" class="addeventatc col-sm-6 text-center" data-intel="true">
+          <img class="img-fluid col-sm-4" src=""/>
+          <span class="col-sm-4">Oct.27 - 28, 2023 - Ladies Retreat</span>
+          <div title="Add to Calendar" class="addeventatc col-sm-4 text-center" data-intel="true">
             Add to Calendar
             <span class="start">10/27/2023 10:30 AM</span>
             <span class="end">10/28/2023 12:00 PM</span>
@@ -148,8 +162,9 @@
         </div>
         
         <div class="row mb-5">
-          <span class="col-sm-6">Nov. 3-5, 2023 - Camp Meeting</span>
-          <div title="Add to Calendar" class="addeventatc col-sm-6 text-center" data-intel="true">
+          <img class="img-fluid col-sm-4" src=""/>
+          <span class="col-sm-4">Nov. 3-5, 2023 - Camp Meeting</span>
+          <div title="Add to Calendar" class="addeventatc col-sm-4 text-center" data-intel="true">
             Add to Calendar
             <span class="start">11/03/2023 6:30 PM</span>
             <span class="end">11/05/2023 12:00 PM</span>
@@ -162,8 +177,9 @@
         </div>     
           
         <div class="row mb-5">
-          <span class="col-sm-6">Dec. 24th, 2023 - Dr. Doyle Jones</span>
-          <div title="Add to Calendar" class="addeventatc col-sm-6 text-center" data-intel="true">
+          <img class="img-fluid col-sm-4" src=""/>
+          <span class="col-sm-4">Dec. 24th, 2023 - Dr. Doyle Jones</span>
+          <div title="Add to Calendar" class="addeventatc col-sm-4 text-center" data-intel="true">
             Add to Calendar
             <span class="start">12/24/2023 10:00 AM</span>
             <span class="end">12/24/2023 12:00 PM</span>
@@ -176,8 +192,9 @@
         </div>
 
         <div class="row mb-5">
-          <span class="col-sm-6">Dec. 31st, 2023 - New Year's Eve Service</span>
-          <div title="Add to Calendar" class="addeventatc col-sm-6 text-center" data-intel="true">
+          <img class="img-fluid col-sm-4" src=""/>
+          <span class="col-sm-4">Dec. 31st, 2023 - New Year's Eve Service</span>
+          <div title="Add to Calendar" class="addeventatc col-sm-4 text-center" data-intel="true">
             Add to Calendar
             <span class="start">12/31/2023 10:00 AM</span>
             <span class="end">12/31/2023 11:00 AM</span>
@@ -197,10 +214,10 @@
         <h3 class="col-12 text-center mb-5">Watch some of our services and highlights. <em>Enjoy!</em></h3>
         <!-- insert videos here --> 
         <div class="col-12 mb-5">
-          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpeoplesfellowshipchurch%2Fvideos%2F1487596965394622%2F&show_text=false&width=560&t=2873" width="550" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpeoplesfellowshipchurch%2Fvideos%2F1487596965394622%2F&show_text=false&width=560&t=2873" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
         </div>
         <div class="col-12 mb-5">
-          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpeoplesfellowshipchurch%2Fvideos%2F709793947657384%2F&show_text=false&width=560&t=0" width="550" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpeoplesfellowshipchurch%2Fvideos%2F709793947657384%2F&show_text=false&width=560&t=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
         </div>     
       </div>
     </div>
