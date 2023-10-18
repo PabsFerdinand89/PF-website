@@ -12,6 +12,11 @@ header, nav {
   max-width: 1000px;
 }
 
+#headbanner {
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .container-sm-fluid {
   background-color: #27445f;
 }
@@ -26,6 +31,13 @@ header, nav {
   margin: auto;
   background-color: #27445f;
 }
+
+#Welcome {width:1000px; height: 700px;}
+#Bible {width:1000px; height: 700px;}
+#Prayer {width:1000px; height: 700px;}
+#Follow {width:1000px; height: 700px;}
+#Holidays {width:1000px; height: 700px;}
+
 
 /* Hide the images by default */
 .mySlides {
