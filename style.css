@@ -12,6 +12,12 @@ header, nav {
   max-width: 1000px;
 }
 
+#welcome {width:1000px; height: 525px;}
+#bible {width:1000px; height: 525px;}
+#prayer {width:1000px; height: 525px;}
+#follow {width:1000px; height: 525px;}
+#holidays {width:1000px; height: 525px;}
+
 .container-sm-fluid {
   background-color: #27445f;
 }
@@ -78,11 +84,10 @@ header, nav {
 #Giving {background-color: #27445f;}
 #Contact {background-color: #27445f;}
 
-#RickVickieSmith{background-color: #8ed4cf;}
-#ChuckKreutzer{background-color: #8ed4cf;}
-#ChrisSeyffert{background-color: #8ed4cf;}
-#KaciaHarmon{background-color: #8ed4cf;}
-#CharlotteHaliman{background-color: #8ed4cf;}
+#RickandVickieSmith {background-color: #8ed4cf; width: 100%; height: 60%;}
+#CharlesKreutzer {background-color: #8ed4cf; width: 100%;}
+#ChrisSeyffert {background-color: #8ed4cf; width: 100%;}
+#KaciaHarmon {background-color: #8ed4cf; width: 100%;}
 
 iframe{
   width: 100%;
