@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  width: 100%;
+  width: auto;
   font-family: Arial,sans-serif, Helvetica;
   margin: 0;
   box-sizing: border-box;
@@ -8,8 +8,8 @@ body, html {
 }
 
 header, nav {
-  width: max-content;
   max-width: 1000px;
+  justify-items: center;
 }
 
 #welcome {width:1000px; height: 525px;}
@@ -53,28 +53,31 @@ header, nav {
 /* Style tab links */
 .tablink {
   background-color: #3FD2C7;
-  color: white;
-  float: left;
+  color: whitesmoke;
   border: none;
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
-  font-size: 17px;
-  width: 25%;
+  margin: 12px auto 12px auto;
+  width: 329px;
+  
 }
 
 .tablink:hover {
   background-color: #99DDFF;
 }
 
+/*tab content*/
 .tabcontent {
-  color: white;
-  display: none;
+  color: whitesmoke;
+  display:flexbox;
   padding: 75px;
   height: 100%;
   width: 100%;
   overflow: auto;
   background-image: url(/images/tab\ content\ background.JPG);
   background-size: contain;
+  background-color: #27445f;
 }
 
 #Home {background-color: #27445f;}
@@ -96,10 +99,11 @@ iframe{
   overflow: hidden;
 }
 
-
-/*tab content*/
 a {
   margin-left: 5px;
+  color: #435477;
+  outline: none;
+  text-decoration: none;
 }
 
 h3 {
@@ -130,11 +134,12 @@ footer {
 }
 
 #dailyBibleVerse {
-  text-align:center; 
-  color:#000000; 
+  text-align:center;
+  text-decoration: none; 
+  color: black; 
   padding:0px; 
-  margin:0px 4px; 
-  font-family:Arial,sans-serif;
+  margin-top: 12px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #reference {
@@ -147,22 +152,24 @@ footer {
   text-align:left; 
   margin: 25px;
   font-size:12px;
-  color:#000000;
+  color:whitesmoke;
+  text-decoration: none;
 }
 
 sub, #providedBy {
   text-align:left; 
-  color:#000000; 
+  color:#000000;
+  background-color: #3FD2C7; 
   margin:3px 4px 0px; 
-  font-family:Arial,sans-serif; 
+  font-family: Georgia, 'Times New Roman', Times, serif; 
   font-size:12px;
 }
 
 #christianityDotCom {
   color:#000000;
-  font-family:Arial,sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size:12px;
-  text-decoration:underline;
+  text-decoration: underline;
   padding:0px;
   margin-bottom: 25px;
   border:25px; 
