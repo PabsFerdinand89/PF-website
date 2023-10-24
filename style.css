@@ -1,15 +1,21 @@
 body, html {
   height: 100%;
   width: auto;
-  font-family: Arial,sans-serif, Helvetica;
+  font-family: montserrat;
   margin: 0;
   box-sizing: border-box;
-  background-color: #27445f;
+  background-color: #3b5d7c;
 }
 
 header, nav {
   max-width: 1000px;
   justify-items: center;
+  font-family: montserrat;
+}
+
+#mainHeader{
+  font-family: montserrat;
+  color: whitesmoke;
 }
 
 #welcome {width:1000px; height: 525px;}
@@ -19,7 +25,8 @@ header, nav {
 #holidays {width:1000px; height: 525px;}
 
 .container-sm-fluid {
-  background-color: #27445f;
+  background-color: #3b5d7c;
+  font-family: montserrat;
 }
 
 /*slideshow */
@@ -30,7 +37,7 @@ header, nav {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  background-color: #27445f;
+  background-color: #3b5d7c;
 }
 
 /* Hide the images by default */
@@ -52,7 +59,7 @@ header, nav {
 
 /* Style tab links */
 .tablink {
-  background-color: #3FD2C7;
+  background-color: #61b4af;
   color: whitesmoke;
   border: none;
   border-radius: 8px;
@@ -64,33 +71,34 @@ header, nav {
 }
 
 .tablink:hover {
-  background-color: #99DDFF;
+  background-color: #76b1ce;
 }
 
 /*tab content*/
 .tabcontent {
+  font: montserrat;
   color: whitesmoke;
   display:flexbox;
   padding: 75px;
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-image: url(/images/tab\ content\ background.JPG);
+  background-image: url(/images/pf\ logo.JPG);
   background-size: contain;
-  background-color: #27445f;
+  background-color: #3b5d7c;
 }
 
-#Home {background-color: #27445f;}
-#About {background-color: #27445f;}
-#Calendar {background-color: #27445f;}
-#Media {background-color: #27445f;}
-#Giving {background-color: #27445f;}
-#Contact {background-color: #27445f;}
+#Home {background-color: #3b5d7c;}
+#About {background-color: #3b5d7c;}
+#Calendar {background-color: #3b5d7c;}
+#Media {background-color: #3b5d7c;}
+#Giving {background-color: #3b5d7c;}
+#Contact {background-color: #3b5d7c;}
 
-#RickandVickieSmith {background-color: #8ed4cf; width: 100%; height: 60%;}
-#CharlesKreutzer {background-color: #8ed4cf; width: 100%;}
-#ChrisSeyffert {background-color: #8ed4cf; width: 100%;}
-#KaciaHarmon {background-color: #8ed4cf; width: 100%;}
+#RickandVickieSmith {background-color: #61b4af; width: 100%; height: 60%;}
+#CharlesKreutzer {background-color: #61b4af; width: 100%;}
+#ChrisSeyffert {background-color: #61b4af; width: 100%;}
+#KaciaHarmon {background-color: #61b4af; width: 100%;}
 
 iframe{
   width: 100%;
@@ -101,7 +109,7 @@ iframe{
 
 a {
   margin-left: 5px;
-  color: #435477;
+  color: #3b5d7c;
   outline: none;
   text-decoration: none;
 }
@@ -129,7 +137,7 @@ iframe {
 
 /*footer*/
 footer {
-  background-color: #5EBEC4;
+  background-color: #61b4af;
   width: max-content;
 }
 
